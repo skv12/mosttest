@@ -1,0 +1,51 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+body {
+    overflow: hidden;
+    min-height: 100vh;
+  }
+.messages-box,
+.chat-box,
+.users-box {
+  overflow-y: overlay;
+  overflow-x: hidden;
+  min-height: 600px;
+  max-height: 600px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    width: 5px;
+    background: #f5f5f5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    width: 1em;
+    background-color: #ddd;
+    outline: 1px solid slategrey;
+    border-radius: 1rem;
+  }
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  input::placeholder {
+    font-size: 0.9rem;
+    color: #999;
+  }
+  .chat{
+    height: 100%;
+    text-align: left;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 100%;
+  }
